@@ -21,32 +21,36 @@ function ChatBody() {
       <div className="absolute bottom-[3.3rem]">
         <Message />
         <form action="">
-          <div className="m-3 relative">
-            <textarea
-              name="message"
-              className="block w-full resize-none max-h-[15rem] break-words overflow-y-auto p-3 text-gray-900 border border-gray-300 rounded-lg focus:outline-none bg-gray-50 sm:text-md dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-              value={singleMessage}
-              onChange={handleChange}
-              ref={textAreaRef}
-              rows="1"
-              placeholder="Compose Message hare"
-            ></textarea>
-            <button type="submit" className="absolute end-2.5 bottom-2.5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                />
-              </svg>
-            </button>
+          <div className="m-3 relative flex flex-row items-end">
+            <div className="flex-auto ">
+              <textarea
+                name="message"
+                className="w-full resize-none max-h-[15rem] break-words p-3 text-slate-900 border border-slate-300 rounded-lg focus:outline-none bg-slate-100 sm:text-md dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white"
+                value={singleMessage}
+                onChange={handleChange}
+                ref={textAreaRef}
+                rows="2"
+                placeholder="Compose Message hare"
+              ></textarea>
+            </div>
+            <div className="flex-none bg-slate-100 dark:bg-slate-700 m-2 rounded-full text-center">
+              <button type="submit" className="block p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </form>
       </div>
