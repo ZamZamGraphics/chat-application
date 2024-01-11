@@ -1,12 +1,12 @@
+import ChatBody from "./components/ChatBody";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import ChatBody from "./components/ChatBody";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="">
+      <div>
         <Sidebar />
         <ChatBody />
       </div>
