@@ -1,6 +1,5 @@
 import avatar from "../assets/avatar.svg";
 
-// eslint-disable-next-line react/prop-types
 function Member({ id }) {
   return (
     <div className="relative flex flex-row p-3 border-b border-slate-900/10 dark:border-slate-50/[0.06] hover:bg-slate-100 dark:hover:bg-slate-800">
